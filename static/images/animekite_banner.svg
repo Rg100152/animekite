@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="banner-title banner-desc">
+  <title id="banner-title">AnimeKite banner</title>
+  <desc id="banner-desc">AnimeKite — Discover Anime and Stream Official Free Hindi Dubs. Built with Ruby and Sinatra for Linux by Raj Gautam.</desc>
+  <defs>
+    <clipPath id="frame"><rect width="1200" height="360" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="360" fill="#0d0f14"/>
+    <g stroke="#202735" stroke-width="1" opacity="0.7">
+      <path d="M0 90H1200M0 180H1200M0 270H1200"/>
+      <path d="M150 0V360M300 0V360M450 0V360M600 0V360M750 0V360M900 0V360M1050 0V360"/>
+    </g>
+    <rect x="0" y="0" width="14" height="360" fill="#ff5722"/>
+    <rect x="14" y="0" width="6" height="360" fill="#00d2ff"/>
+
+    <g transform="translate(62 66)">
+      <rect width="228" height="228" rx="42" fill="#161b26" stroke="#2a3242" stroke-width="3"/>
+      <g transform="translate(24 22) scale(0.86)">
+        <path d="M106 12 L194 94 L106 182 L18 94 Z" fill="#ff5722"/>
+        <path d="M106 12 L194 94 L106 94 Z" fill="#00d2ff"/>
+        <path d="M106 182 L18 94 L106 94 Z" fill="#c9441c"/>
+        <path d="M106 16 L189 94 L106 177 L23 94 Z" fill="none" stroke="#f8fafc" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M90 70 L90 116 L132 93 Z" fill="#f8fafc"/>
+      </g>
+    </g>
+
+    <text x="340" y="128" font-family="DejaVu Sans, Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2" fill="#f8fafc">Anime<tspan fill="#ff5722">Kite</tspan></text>
+    <text x="342" y="178" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" fill="#00d2ff">Discover Anime &amp; Stream Official Free Hindi Dubs</text>
+    <text x="342" y="214" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" fill="#94a3b8">Open source • Jikan v4 metadata • Privacy-friendly YouTube embeds</text>
+
+    <g transform="translate(340 244)">
+      <rect x="0" y="0" width="132" height="34" rx="17" fill="#161b26" stroke="#00d2ff" stroke-width="2"/>
+      <text x="66" y="23" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#00d2ff">LINUX • 4GB OK</text>
+      <rect x="146" y="0" width="126" height="34" rx="17" fill="#161b26" stroke="#ff5722" stroke-width="2"/>
+      <text x="209" y="23" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#ff5722">RUBY • SINATRA</text>
+      <rect x="286" y="0" width="112" height="34" rx="17" fill="#161b26" stroke="#2a3242" stroke-width="2"/>
+      <text x="342" y="23" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#94a3b8">MIT LICENSE</text>
+    </g>
+
+    <text x="1160" y="330" text-anchor="end" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#94a3b8">Developed by Raj Gautam | github.com/Rg100152/animekite</text>
+  </g>
+</svg>

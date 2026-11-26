@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AnimeKite — discover anime and watch free, official Hindi dubs from Muse India.">
+  <title>AnimeKite — Anime Discovery &amp; Legal Hindi Dub Hub</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/animekite_logo.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="AnimeKite home">
+      <img src="{{ url_for('static', filename='images/animekite_logo.svg') }}" alt="AnimeKite logo" width="46" height="46">
+    </a>
+
+    <label class="search-field" for="search">
+      <span class="sr-only">Search anime</span>
+      <input id="search" type="search" placeholder="Search anime by title..." autocomplete="off">
+    </label>
+
+    <button id="watchlist-toggle" class="nav-button" type="button" aria-pressed="false">
+      My Watchlist <span id="watchlist-count" class="count">0</span>
+    </button>
+
+    <a class="github-link" href="{{ repository }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="AnimeKite banner">
+      <img src="{{ url_for('static', filename='images/animekite_banner.svg') }}"
+           alt="AnimeKite — Discover Anime &amp; Stream Official Free Hindi Dubs"
+           width="1200" height="360" loading="lazy">
+    </section>
+
+    <nav class="filters" aria-label="Anime categories">
+      <button class="filter is-active" type="button" data-category="all" aria-pressed="true">All Anime</button>
+      <button class="filter" type="button" data-category="hindi" aria-pressed="false">Hindi Dubbed (Official Free)</button>
+      <button class="filter" type="button" data-category="airing" aria-pressed="false">Top Airing</button>
+      <button class="filter" type="button" data-category="movies" aria-pressed="false">Popular Movies</button>
+      <button class="filter" type="button" data-category="watchlist" aria-pressed="false">My Watchlist</button>
+    </nav>
+
+    <p id="status" class="status" role="status" aria-live="polite">Loading collection...</p>
+    <section id="grid" class="grid" aria-label="Anime titles"></section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Metadata by <a href="https://jikan.moe" target="_blank" rel="noopener noreferrer">Jikan</a>.
+      Streams are embedded only from official distributors such as
+      <a href="https://www.youtube.com/@MuseIndiaChannel/playlists" target="_blank" rel="noopener noreferrer">Muse India</a>.
+      Watchlist is stored locally in your browser.
+    </p>
+    <p>Built with Python &amp; Flask by <strong>Raj Gautam (Open Source Lover)</strong> &middot; MIT License 2026</p>
+    <p><a href="{{ repository }}" target="_blank" rel="noopener noreferrer">github.com/Rg100152/animekite</a></p>
+  </footer>
+
+  <div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-close aria-label="Close player">&times;</button>
+      <div id="modal-player" class="player"></div>
+      <p id="player-note" class="player-note"></p>
+      <div class="modal-copy">
+        <h2 id="modal-title"></h2>
+        <p id="modal-meta" class="modal-meta"></p>
+        <p id="modal-synopsis" class="modal-synopsis"></p>
+        <p id="modal-licence" class="modal-licence"></p>
+        <div class="modal-actions">
+          <button id="modal-watchlist" class="action-button" type="button">Add to Watchlist</button>
+          <a id="official-link" class="action-link" href="#" target="_blank" rel="noopener noreferrer">Watch on official platform</a>
+          <a id="details-link" class="action-link" href="#" target="_blank" rel="noopener noreferrer">MyAnimeList details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/json" id="initial-data">{{ {"curated": curated, "airing": airing} | tojson }}</script>
+  <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</body>
+</html>

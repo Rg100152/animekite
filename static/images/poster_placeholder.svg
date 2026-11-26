@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450" role="img" aria-label="Poster placeholder">
+  <rect width="300" height="450" fill="#161b26"/>
+  <path d="M150 116 L236 202 L150 288 L64 202 Z" fill="#ff5722"/>
+  <path d="M150 116 L236 202 L150 202 Z" fill="#00d2ff"/>
+  <path d="M150 288 L64 202 L150 202 Z" fill="#c9441c"/>
+  <path d="M130 174 L130 230 L182 202 Z" fill="#0d0f14"/>
+  <text x="150" y="350" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#94a3b8">AnimeKite</text>
+</svg>

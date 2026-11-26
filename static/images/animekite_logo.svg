@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">AnimeKite logo</title>
+  <desc id="logo-desc">A geometric saffron kite with a cyan play emblem and the AnimeKite wordmark.</desc>
+  <rect width="512" height="512" rx="88" fill="#0d0f14"/>
+  <rect x="10" y="10" width="492" height="492" rx="78" fill="none" stroke="#2a3242" stroke-width="4"/>
+  <path d="M256 72 L372 190 L256 318 L140 190 Z" fill="#ff5722"/>
+  <path d="M256 72 L372 190 L256 190 Z" fill="#00d2ff"/>
+  <path d="M256 318 L140 190 L256 190 Z" fill="#c9441c"/>
+  <path d="M256 78 L366 190 L256 312 L146 190 Z" fill="none" stroke="#f8fafc" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M234 158 L234 222 L290 190 Z" fill="#f8fafc"/>
+  <path d="M256 318 L240 384" stroke="#00d2ff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M240 384 L210 368 L210 400 Z" fill="#00d2ff"/>
+  <path d="M240 384 L272 370 L272 398 Z" fill="#ff5722"/>
+  <text x="256" y="450" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-1" fill="#f8fafc">Anime<tspan fill="#ff5722">Kite</tspan></text>
+</svg>
